@@ -1,2 +1,1 @@
 # css-challenges
-css-challenges

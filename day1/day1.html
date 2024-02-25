@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=s, initial-scale=1.0" />
+      <title>Day1 - CSS Challenge</title>
+      <link rel="stylesheet" href="./css/day1.css" />
+   </head>
+   <body>
+      <header id="header">CSS</header>
+      <section>
+         <img id="img-main" src="./img/css.png" />
+         <div class="div-inst">
+            <h1>CSS Overview</h1>
+            <span>Cascading Style Sheets</span>
+            <p>Knowledge of CSS is a fundamental skill in the web development space.</p>
+            <p>Scroll down to learn more about what css is</p>
+            <div class="div-vote">
+               <button class="btn-vote">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#fc4c4e">
+                     <path d="M0 0h24v24H0V0z" fill="none" />
+                     <path
+                        d="M13.11 5.72l-.57 2.89c-.12.59.04 1.2.42 1.66.38.46.94.73 1.54.73H20v1.08L17.43 18H9.34c-.18 0-.34-.16-.34-.34V9.82l4.11-4.1M14 2L7.59 8.41C7.21 8.79 7 9.3 7 9.83v7.83C7 18.95 8.05 20 9.34 20h8.1c.71 0 1.36-.37 1.72-.97l2.67-6.15c.11-.25.17-.52.17-.8V11c0-1.1-.9-2-2-2h-5.5l.92-4.65c.05-.22.02-.46-.08-.66-.23-.45-.52-.86-.88-1.22L14 2zM4 9H2v11h2c.55 0 1-.45 1-1v-9c0-.55-.45-1-1-1z"
+                     />
+                  </svg>
+               </button>
+               <button class="btn-vote">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#02c73c">
+                     <path d="M24 24H0V0h24v24z" fill="none" />
+                     <path
+                        d="M10.89 18.28l.57-2.89c.12-.59-.04-1.2-.42-1.66-.38-.46-.94-.73-1.54-.73H4v-1.08L6.57 6h8.09c.18 0 .34.16.34.34v7.84l-4.11 4.1M10 22l6.41-6.41c.38-.38.59-.89.59-1.42V6.34C17 5.05 15.95 4 14.66 4h-8.1c-.71 0-1.36.37-1.72.97l-2.67 6.15c-.11.25-.17.52-.17.8V13c0 1.1.9 2 2 2h5.5l-.92 4.65c-.05.22-.02.46.08.66.23.45.52.86.88 1.22L10 22zm10-7h2V4h-2c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1z"
+                     />
+                  </svg>
+               </button>
+            </div>
+         </div>
+      </section>
+      <section class="section-content">
+         <nav class="nav-sticky">
+            <ul>
+               <li>
+                  <a href="#overview">What is CSS</a>
+               </li>
+               <li><a href="#overview2">Syntax</a></li>
+               <li><a href="#overview3">History</a></li>
+               <li><a href="#overview4">Limitations</a></li>
+            </ul>
+         </nav>
+
+         <div>
+            <h3 class="target" id="overview">What is CSS</h3>
+            <p>
+               Cascading Style Sheets (CSS) is a style sheet language used for specifying the presentation and styling
+               of a document written in a markup language such as HTML or XML (including XML dialects such as SVG,
+               MathML or XHTML).[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and
+               JavaScript.[2] CSS is designed to enable the separation of content and presentation, including layout,
+               colors, and fonts.[3] This separation can improve content accessibility;[further explanation needed]
+               provide more flexibility and control in the specification of presentation characteristics; enable
+               multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, which
+               reduces complexity and repetition in the structural content; and enable the .css file to be cached to
+               improve the page load speed between the pages that share the file and its formatting. Separation of
+               formatting and content also makes it feasible to present the same markup page in different styles for
+               different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen
+               reader), and on Braille-based tactile devices. CSS also has rules for alternate formatting if the content
+               is accessed on a mobile device.[4] The name cascading comes from the specified priority scheme to
+               determine which declaration applies if more than one declaration of a property match a particular
+               element. This cascading priority scheme is predictable. The CSS specifications are maintained by the
+               World Wide Web Consortium (W3C). Internet media type (MIME type) text/css is registered for use with CSS
+               by RFC 2318 (March 1998). The W3C operates a free CSS validation service for CSS documents.[5] In
+               addition to HTML, other markup languages support the use of CSS including XHTML, plain XML, SVG, and XUL.
+               CSS is also used in the GTK widget toolkit.
+            </p>
+            <h3 class="target" id="overview2">Syntax</h3>
+            <p>
+               CSS was first proposed by Håkon Wium Lie on 10 October 1994.[23] At the time, Lie was working with Tim
+               Berners-Lee at CERN.[24] Several other style sheet languages for the web were proposed around the same
+               time, and discussions on public mailing lists and inside World Wide Web Consortium resulted in the first
+               W3C CSS Recommendation (CSS1)[25] being released in 1996. In particular, a proposal by Bert Bos was
+               influential; he became co-author of CSS1, and is regarded as co-creator of CSS.[26] Style sheets have
+               existed in one form or another since the beginnings of Standard Generalized Markup Language (SGML) in the
+               1980s, and CSS was developed to provide style sheets for the web.[27] One requirement for a web style
+               sheet language was for style sheets to come from different sources on the web. Therefore, existing style
+               sheet languages like DSSSL and FOSI were not suitable. CSS, on the other hand, let a document's style be
+               influenced by multiple style sheets by way of "cascading" styles.[27] As HTML grew, it came to encompass
+               a wider variety of stylistic capabilities to meet the demands of web developers. This evolution gave the
+               designer more control over site appearance, at the cost of more complex HTML. Variations in web browser
+               implementations, such as ViolaWWW and WorldWideWeb,[28] made consistent site appearance difficult, and
+               users had less control over how web content was displayed. The browser/editor developed by Tim
+               Berners-Lee had style sheets that were hard-coded into the program. The style sheets could therefore not
+               be linked to documents on the web.[24] Robert Cailliau, also of CERN, wanted to separate the structure
+               from the presentation so that different style sheets could describe different presentation for printing,
+               screen-based presentations, and editors.[28]
+            </p>
+            <h3 class="target" id="overview3">History</h3>
+            <p>
+               CSS was first proposed by Håkon Wium Lie on 10 October 1994.[23] At the time, Lie was working with Tim
+               Berners-Lee at CERN.[24] Several other style sheet languages for the web were proposed around the same
+               time, and discussions on public mailing lists and inside World Wide Web Consortium resulted in the first
+               W3C CSS Recommendation (CSS1)[25] being released in 1996. In particular, a proposal by Bert Bos was
+               influential; he became co-author of CSS1, and is regarded as co-creator of CSS.[26] Style sheets have
+               existed in one form or another since the beginnings of Standard Generalized Markup Language (SGML) in the
+               1980s, and CSS was developed to provide style sheets for the web.[27] One requirement for a web style
+               sheet language was for style sheets to come from different sources on the web. Therefore, existing style
+               sheet languages like DSSSL and FOSI were not suitable. CSS, on the other hand, let a document's style be
+               influenced by multiple style sheets by way of "cascading" styles.[27] As HTML grew, it came to encompass
+               a wider variety of stylistic capabilities to meet the demands of web developers. This evolution gave the
+               designer more control over site appearance, at the cost of more complex HTML. Variations in web browser
+               implementations, such as ViolaWWW and WorldWideWeb,[28] made consistent site appearance difficult, and
+               users had less control over how web content was displayed. The browser/editor developed by Tim
+               Berners-Lee had style sheets that were hard-coded into the program. The style sheets could therefore not
+               be linked to documents on the web.[24] Robert Cailliau, also of CERN, wanted to separate the structure
+               from the presentation so that different style sheets could describe different presentation for printing,
+               screen-based presentations, and editors.[28]
+            </p>
+            <h3 class="target" id="overview4">Limitations</h3>
+            <p>
+               Some noted limitations of the current capabilities of CSS include: Cannot explicitly declare new scope
+               independently of position Scoping rules for properties such as z-index look for the closest parent
+               element with a position: absolute or position: relative attribute. This odd coupling has undesired
+               effects. For example, it is impossible to avoid declaring a new scope when one is forced to adjust an
+               element's position, preventing one from using the desired scope of a parent element. Pseudo-class dynamic
+               behavior not controllable CSS implements pseudo-classes that allow a degree of user feedback by
+               conditional application of alternate styles. One CSS pseudo-class, ":hover", is dynamic (equivalent of
+               JavaScript "onmouseover") and has potential for misuse (e.g., implementing cursor-proximity popups),[67]
+               but CSS has no ability for a client to disable it (no "disable"-like property) or limit its effects (no
+               "nochange"-like values for each property). Cannot name rules There is no way to name a CSS rule, which
+               would allow (for example) client-side scripts to refer to the rule even if its selector changes. Cannot
+               include styles from a rule into another rule CSS styles often must be duplicated in several rules to
+               achieve the desired effect, causing additional maintenance and requiring more thorough testing. Some new
+               CSS features were proposed to solve this but were abandoned afterward.[68][69] Instead, authors may gain
+               this ability by using more sophisticated stylesheet languages which compile to CSS, such as Sass, Less,
+               or Stylus. Cannot target specific text without altering markup Besides the :first-letter pseudo-element,
+               one cannot target specific ranges of text without needing to utilize placeholder elements.
+            </p>
+         </div>
+      </section>
+      <script>
+         document.addEventListener('scroll', function () {
+            const $header = document.querySelector('#header');
+
+            const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+            const opacity = Math.min(1, scrollPosition / 50); // 500은 배경색이 완전히 하얗게 되는 스크롤 위치입니다.
+            $header.style.opacity = opacity; // RGBA를 사용해 투명도 조절
+         });
+      </script>
+   </body>
+</html>
